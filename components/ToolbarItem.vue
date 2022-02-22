@@ -2,7 +2,7 @@
   <v-app-bar fixed  dark>
     <v-app-bar-nav-icon
       class="hidden-md-and-up"
-      color="primary"
+      @click.stop="toggleDrawer"
     ></v-app-bar-nav-icon>
 
     <v-toolbar-title class="pl-0">
@@ -40,9 +40,9 @@ export default {
     };
   },
   methods: {
-    // toggleDrawer() {
-    //   this.$store.commit("toggleDrawer");
-    // },
+    toggleDrawer() {
+      this.$store.commit("toggleDrawer");
+    },
   },
 };
 </script>
