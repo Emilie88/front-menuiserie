@@ -34,7 +34,7 @@ export default {
     address:"Adresa",
     city:"Oras",
     zipCode:"Cod postal",
-    quoteRequest:"Cere oferta",
+    quoteRequest:"Oferta gratuita",
     devisContent:"se angajează să răspundă. Solicita o ofertă pentru orice tip de mobila pe măsură și vă vom răspunde cât mai curând posibil,in functie de cererea ta!",
     today:"Azi",
     day:"zi",

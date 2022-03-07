@@ -1,10 +1,11 @@
-import colors from 'vuetify/es5/util/colors'
+// import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - front-menuiserie',
-    title: 'front-menuiserie',
+    // titleTemplate: '%s - front-menuiserie',
+    titleTemplate: '%s',
+    // title: 'Adrian Boghiu Menuisier',
     htmlAttrs: {
       lang: 'en',
     },
@@ -21,7 +22,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/axios.js'],
+  plugins: ['~/plugins/axios.js','~/plugins/vee-validate.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -77,5 +78,8 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: ["vee-validate/dist/rules"],
+    extend(config, ctx) {}
+  }
 }

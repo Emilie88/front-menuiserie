@@ -3,10 +3,13 @@
     <toolbar-item/>
     <drawer-item v-if="drawer == true"/>
     <Nuxt />
+    <footer-component/>
   </v-app>
 </template>
 <script>
+import FooterComponent from '../components/FooterComponent.vue';
 export default {
+  components: { FooterComponent },
   computed: {
     drawer: {
       get() {

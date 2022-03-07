@@ -14,6 +14,7 @@ const actions = {
     commit("setIcon", types[`${type}`].icon);
     commit("setDetails", details);
     commit("setSnackbar", true);
+    commit("setDialog", true);
   },
 }
 
@@ -26,6 +27,7 @@ const mutations = {
   setLoading: set("loading"),
   setDrawer: set("drawer"),
   toggleDrawer: toggle("drawer"),
+  setDialog: set("dialog"),
 }
 
 const state = () => ({
@@ -36,6 +38,7 @@ const state = () => ({
   details: null,
   loading: false,
   drawer: null,
+  dialog: false,
 })
 
 const getters = {
@@ -46,6 +49,7 @@ const getters = {
   details: (state) => state.details,
   loading: (state) => state.loading,
   drawer: (state) => state.drawer,
+  dialog: (state) => state.dialog,
 }
 
 export default {

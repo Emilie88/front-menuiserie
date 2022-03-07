@@ -1,18 +1,14 @@
 <template>
   <div id="about">
     <section id="about-me">
-      <div class="py-12"></div>
+      <div class="py-4"></div>
 
       <v-container class="text-center">
-        <h2
-          :class="[
-            $vuetify.breakpoint.smAndDown
-              ? 'display-1 font-weight-bold mb-3 text-uppercase text-center'
-              : 'display-2 font-weight-bold mb-3 text-uppercase text-center',
-          ]"
+        <h1
+         class="display-1 font-weight-bold mb-3 text-uppercase text-center"
         >
           {{ $t("about") }}
-        </h2>
+        </h1>
 
         <v-responsive class="mx-auto mb-8" width="56">
           <v-divider class="mb-1"></v-divider>

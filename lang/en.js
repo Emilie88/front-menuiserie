@@ -33,7 +33,7 @@ export default {
     address:"Address",
     city:"City",
     zipCode:"Code postal",
-    quoteRequest:"Quote request",
+    quoteRequest:"Free quote",
     devisContent:"is committed to being responsive.Ask us for a quote for any type of wood construction on measurement and we will get back to you as soon as possible,according to your request!",
     today:"Today",
     day:"day",

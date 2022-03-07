@@ -1,5 +1,8 @@
 export default {
-
+  validations: {
+    required: "Ce champ est obligatoire !",
+    email: "L'email doit être valide !"
+  },
   home: "Accueil",
   about: "A propos de moi",
   achievement: "Réalisations",
@@ -34,7 +37,7 @@ export default {
   address:"Adresse",
   city:"Ville",
   zipCode:"Code postal",
-  quoteRequest:"Demandez un devis",
+  quoteRequest:"Devis gratuit",
   devisContent:"s'engage à être réactif.Demandez-nous un devis pour tout type de réalisation en bois sur mesure et nous vous répondrons dans les meilleurs délais, en fonction de votre demande !",
   today:"Aujourd'hui",
   day:"jour",
@@ -79,6 +82,7 @@ export default {
     fr:"Français",
     ro:"Roumain"
   },
+  benefits: "Préstations",
   forgotPassword:"Mot de passe oublié",
   star:"* Champs obligatoires !",
   mailRule:"L'email doit être valide !",
@@ -86,7 +90,13 @@ export default {
   deleteEvent: "Confirmez la suppression de ",
   newEvent:"Nouveau rendez-vous",
   newEventAdmin:"Nouveau événement",
-  dateCreation:"Date de création"
+  dateCreation:"Date de création",
+  bathTitle: "Salle de bain",
+  bathDescription: "La pose des meubles ou la création d'une salle de bain sur mesure? Vos meubles s’intégreront parfaitement à votre salle de bain, en s’adaptant à l’espace.",
+  kitchenDescription : "La cuisine est probablement la pièce la plus importante de nos logements.La pose d'une cuisine sur mesure  ou acheté en magasin, c’est selon vos choix et vos goûts. ",
+  libraryDescription: "Une bibliothèque sur mesure  est non seulement un espace de rangement, mais aussi un élément majeur de décoration et de mise en valeur de votre intérieur.",
+  cupboardDescription: "Un placard ou des etagères sur mesure  vous permet d’optimiser vos espaces.Vous choisissez vos portes de placard : coulissantes ou battantes, qui peuvent être moulurées ou à peindre.",
+  stairsDescription: "La pose ou la création sur mesure des escaliers pour l'habitat, entièrement personnalisables et adaptables à votre intérieur.Votre escalier sublimera votre intérieur"
 
 
 }
