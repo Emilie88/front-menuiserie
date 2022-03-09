@@ -8,7 +8,7 @@
 
       <v-toolbar-title class="pl-0">
         <nuxt-link class="nav-item" to="/">
-          <img src="@/assets/logosWix.png" style="width: 70; height: 70px"
+          <img src="@/assets/logosWix.png" style="width: 70; height: 65px"
         /></nuxt-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -32,7 +32,7 @@ export default {
     return {
       links: [
         { text: this.$t('home'), route: '/' },
-        { text: this.$t('achievement'), route: '/realisations' },
+        { text: this.$t('achievement'), route: '/achievements' },
         { text: this.$t('devis'), route: '/quote' },
         { text: this.$t('contact'), route: '/contact' },
       ],

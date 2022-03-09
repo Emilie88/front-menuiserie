@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <v-footer class="justify-center" color="#292929" height="100">
+    <v-footer class="justify-center" color="#292929" fixed>
       <div
         class="title font-weight-light grey--text text--lighten-1 text-center"
       >

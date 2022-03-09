@@ -1,6 +1,6 @@
 <template>
   <v-main>
-    <section id="hero">
+    <section id="hero" class="mt-7">
       <v-carousel
         cycle
         hide-delimiter-background
@@ -40,7 +40,7 @@
 
         <all-services />
         <div class="text-right">
-          <v-btn class="ma-2 text-center" outlined right color="primary">
+          <v-btn class="ma-2 text-center" to="/achievements" outlined right color="primary">
             {{ $t('achievement') }} <v-icon medium> mdi-chevron-right </v-icon>
           </v-btn>
         </div>

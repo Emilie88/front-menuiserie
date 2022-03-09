@@ -6,6 +6,7 @@ export default {
   home: "Accueil",
   about: "A propos de moi",
   achievement: "Réalisations",
+  myAchievements: "Mes réalisations",
   devis: "Demander un devis",
   contact: "Contact",
   login:"Se connecter",

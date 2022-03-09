@@ -23,10 +23,9 @@ export default {
     return {
       links: [
         { text: this.$t("home"), route: "/" },
-        { text: this.$t("achievement"), route: "/realisations" },
-        { text: this.$t("devis"), route: "/devis" },
+        { text: this.$t("achievement"), route: "/achievements" },
+        { text: this.$t("devis"), route: "/quote" },
         { text: this.$t("contact"), route: "/contact" },
-        { text: this.$t("login"), route: "/login" },
       ],
     };
   },
