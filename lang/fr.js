@@ -1,4 +1,5 @@
-export default {
+export default async (context, locale) => {
+  return await Promise.resolve({
   validations: {
     required: "Ce champ est obligatoire !",
     email: "L'email doit être valide !"
@@ -98,6 +99,6 @@ export default {
   libraryDescription: "Une bibliothèque sur mesure  est non seulement un espace de rangement, mais aussi un élément majeur de décoration et de mise en valeur de votre intérieur.",
   cupboardDescription: "Un placard ou des etagères sur mesure  vous permet d’optimiser vos espaces.Vous choisissez vos portes de placard : coulissantes ou battantes, qui peuvent être moulurées ou à peindre.",
   stairsDescription: "La pose ou la création sur mesure des escaliers pour l'habitat, entièrement personnalisables et adaptables à votre intérieur.Votre escalier sublimera votre intérieur"
-
+  })
 
 }

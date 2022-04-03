@@ -1,4 +1,5 @@
-export default {
+export default async (context, locale) => {
+  return await Promise.resolve({
     home : "Home",
     about: "About me",
     achievement: "Achievements",
@@ -86,5 +87,6 @@ export default {
     newEvent:"New appointment",
     newEventAdmin:"New event",
     dateCreation:"Created at"
+  })
 
 }

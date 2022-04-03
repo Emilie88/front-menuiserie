@@ -38,7 +38,7 @@
           <div>{{ $t('liveMessage') }}</div>
           <br />
 
-          <ValidationProvider v-slot="{ handleSubmit }" rules="required|email">
+          <ValidationObserver v-slot="{ handleSubmit }" rules="required|email">
             <v-form
               ref="form"
               lazy-validation
@@ -53,7 +53,7 @@
               />
 
               <text-field
-                v-model="body.mail"
+                v-model="body.email"
                 flat
                 color="lime darken-3"
                 :label="$t('mail')"
@@ -92,7 +92,7 @@
                 </v-btn>
               </v-row>
             </v-form>
-          </ValidationProvider>
+          </ValidationObserver>
         </v-col>
       </v-row>
     </v-theme-provider>
@@ -111,7 +111,7 @@ export default {
     return {
       body: {
         name: '',
-        mail: '',
+        email: '',
         subject: '',
         message: '',
       },
@@ -122,7 +122,7 @@ export default {
     async submit() {
       try {
         await this.$http.post(
-          'https://127.0.0.1:8000/api/add-contact',
+          'http://localhost:3001/api/contact',
           this.body
         )
 

@@ -22,7 +22,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/axios.js','~/plugins/vee-validate.js', { src: '~/plugins/gallery', mode: 'client' }],
+  plugins: ['~/plugins/axios.js','~/plugins/vee-validate.js',{ src: '~/plugins/gallery', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -43,13 +43,13 @@ export default {
   ],
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', file: 'en.js' },
-      { code: 'fr', iso: 'fr-FR', file: 'fr.js' },
-      { code: 'ro', iso: 'ro-RO', file: 'ro.js' }
+      { code: 'en', iso: 'en-US', file: 'en.js',name: 'English' },
+      { code: 'fr', iso: 'fr-FR', file: 'fr.js',name: 'Français' },
+      // { code: 'ro', iso: 'ro-RO', file: 'ro.js',name: 'Romana' }
     ],
     defaultLocale: 'fr',
     vueI18n: {
-      fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en",
+      fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en" || "ro",
     },
     lazy: true,
     langDir: "lang/",
@@ -81,5 +81,6 @@ export default {
   build: {
     transpile: ["vee-validate/dist/rules"],
     extend(config, ctx) {}
-  }
+  },
+ 
 }

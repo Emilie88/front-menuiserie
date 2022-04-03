@@ -28,6 +28,11 @@ const mutations = {
   setDrawer: set("drawer"),
   toggleDrawer: toggle("drawer"),
   setDialog: set("dialog"),
+  SET_LANG(state, locale) {
+    if (state.locales.find(el => el.code === locale)) {
+      state.locale = locale
+    }
+  }
 }
 
 const state = () => ({
@@ -39,6 +44,21 @@ const state = () => ({
   loading: false,
   drawer: null,
   dialog: false,
+  locales: [
+    {
+      code: 'fr',
+      name: 'FR'
+    },
+    {
+      code: 'en',
+      name: 'EN'
+    },
+    {
+      code: 'ro',
+      name: 'Ro'
+    }
+  ],
+  locale: 'fr'
 })
 
 const getters = {

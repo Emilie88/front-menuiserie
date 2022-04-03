@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { extend, configure,ValidationProvider } from "vee-validate";
+import { extend, configure,ValidationProvider, ValidationObserver } from "vee-validate";
 import { required, email } from "vee-validate/dist/rules";
 
 extend("required", required);
@@ -13,5 +13,6 @@ export default function VeeValidatePlugin({ app }) {
 };
 
 Vue.component('ValidationProvider', ValidationProvider);
+Vue.component("ValidationObserver", ValidationObserver);
 
 

@@ -16,28 +16,31 @@
         <v-list-item
           v-for="item in links"
           :key="item.text"
-          :to="item.route"
+          :to="localePath(item.route)"
         >
-          <v-list-item-title>{{ item.text }}</v-list-item-title>
+          <v-list-item-title>{{ $t(item.text) }}</v-list-item-title>
         </v-list-item>
       </v-toolbar-items>
 
-      <!-- <LanguageSwitcher /> -->
+      <LanguageSwitcher />
     </v-app-bar>
   </v-container>
 </template>
 <script>
+import LanguageSwitcher from "./LanguageSwitcher.vue";
 export default {
+  components:{LanguageSwitcher},
   data() {
     return {
       links: [
-        { text: this.$t('home'), route: '/' },
-        { text: this.$t('achievement'), route: '/achievements' },
-        { text: this.$t('devis'), route: '/quote' },
-        { text: this.$t('contact'), route: '/contact' },
+        { text: 'home', route: '/' },
+        { text: 'achievement', route: '/achievements' },
+        { text: 'devis', route: '/quote' },
+        { text: 'contact', route: '/contact' },
       ],
     }
   },
+ 
   methods: {
     toggleDrawer() {
       this.$store.commit('toggleDrawer')

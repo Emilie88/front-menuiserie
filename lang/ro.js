@@ -1,4 +1,5 @@
-export default {
+export default async (context, locale) => {
+  return await Promise.resolve({
 
     home : "Acasa",
     about: "Despre mine",
@@ -88,5 +89,5 @@ export default {
     newEventAdmin:"Eveniment nou",
     dateCreation:"Data postarii"
 
-
+  })
 }
