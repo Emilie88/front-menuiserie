@@ -85,7 +85,7 @@
                   type="submit"
                   outlined
                   medium
-                  color="primary"
+                  color="secondary"
         
                 >
                   {{ $t('send') }}

@@ -12,13 +12,13 @@
         /></nuxt-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-list-item
-          v-for="item in links"
-          :key="item.text"
-          :to="localePath(item.route)"
-        >
-          <v-list-item-title>{{ $t(item.text) }}</v-list-item-title>
+      <v-toolbar-items class="hidden-sm-and-down" >
+        <v-list-item v-for="item in links" :key="item.text">
+          <NuxtLink :to="localePath(item.route)"
+            ><v-list-item-title color="secondary">{{
+              $t(item.text)
+            }}</v-list-item-title></NuxtLink
+          >
         </v-list-item>
       </v-toolbar-items>
 
@@ -27,9 +27,9 @@
   </v-container>
 </template>
 <script>
-import LanguageSwitcher from "./LanguageSwitcher.vue";
+import LanguageSwitcher from './LanguageSwitcher.vue'
 export default {
-  components:{LanguageSwitcher},
+  components: { LanguageSwitcher },
   data() {
     return {
       links: [
@@ -40,7 +40,7 @@ export default {
       ],
     }
   },
- 
+
   methods: {
     toggleDrawer() {
       this.$store.commit('toggleDrawer')
@@ -48,3 +48,25 @@ export default {
   },
 }
 </script>
+<style>
+/* a.nuxt-link-active {
+  font-weight: bold;
+} */
+/* exact link will show the primary color for only the exact matching link */
+a.nuxt-link-exact-active {
+  color: #FFDD64;
+}
+/* a.nuxt-link-active {
+  color:#FFDD64!important;
+} */
+/* exact link will show the primary color for only the exact matching link */
+/* a.nuxt-link-exact-active {
+  color: #FFDD64!important;
+}*/
+a {
+  text-decoration: none;
+  /* color: #fff !important; */
+} 
+
+
+</style>

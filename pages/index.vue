@@ -40,7 +40,7 @@
 
         <all-services />
         <div class="text-right">
-          <v-btn class="ma-2 text-center" to="/achievements" outlined right color="primary">
+          <v-btn class="ma-2 text-center" to="/achievements" outlined right color="secondary">
             {{ $t('achievement') }} <v-icon medium> mdi-chevron-right </v-icon>
           </v-btn>
         </div>
@@ -75,6 +75,13 @@ import AllServices from '../components/AllServices.vue'
 import ContactComponent from '../components/ContactComponent.vue'
 export default {
   components: { AllServices, ContactComponent },
+   nuxtI18n: {
+    paths: {
+      en: '/', 
+      fr: '/', 
+      ro: '/' 
+    }
+  },
   data() {
     return {
       title: this.$t('titleHome'),

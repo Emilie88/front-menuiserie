@@ -36,6 +36,11 @@ export default {
       },
     },
   },
+  data(){
+    return{
+       fab: false,
+    }
+  },
   methods: {
     onScroll(e) {
       if (typeof window === 'undefined') return
