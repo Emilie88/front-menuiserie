@@ -56,13 +56,7 @@ export default {
 a.nuxt-link-exact-active {
   color: #FFDD64;
 }
-/* a.nuxt-link-active {
-  color:#FFDD64!important;
-} */
-/* exact link will show the primary color for only the exact matching link */
-/* a.nuxt-link-exact-active {
-  color: #FFDD64!important;
-}*/
+
 a {
   text-decoration: none;
   /* color: #fff !important; */

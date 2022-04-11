@@ -161,7 +161,7 @@ export default {
 
         // Success snackbar
         this.$store.dispatch('show', {
-          text: 'Your devis has been send',
+          text: 'Your quote has been send',
           type: 'success',
         })
         this.$refs.form.reset()
